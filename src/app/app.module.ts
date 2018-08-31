@@ -6,8 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { NotFoundComponent } from './not-found.component';
 import { RouterExampleComponent } from './router-example/router-example.component';
-import { NotFoundComponent } from './router-example/not-found.component';
+import {Child1Component} from './router-example/children/child-1.component';
+import {Child2Component} from './router-example/children/child-2.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { NotFoundComponent } from './router-example/not-found.component';
   declarations: [
     AppComponent,
     RouterExampleComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    Child1Component,
+    Child2Component
   ],
   bootstrap: [ AppComponent ]
 })
