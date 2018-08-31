@@ -1,2 +1,8 @@
 <span class="glyphicon glyphicon-refresh glyphicon-spin spinner" *ngIf="loading"></span>
 <router-outlet></router-outlet>
+
+<div style="margin-top: 50px;">
+  <ng-container *ngFor="let nav of links">
+    <a [href]="nav.link">{{ nav.title }}</a><br/>
+  </ng-container>
+</div>

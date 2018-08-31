@@ -1,0 +1,5 @@
+<p>
+  <ng-container *ngIf="eb.subscribe() | async as msg">
+    Last message: <span innerHtml="{{ msg.msg }}"></span>
+  </ng-container>
+</p>

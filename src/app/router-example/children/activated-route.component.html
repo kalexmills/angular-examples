@@ -1,0 +1,16 @@
+<div>
+  ActivatedRoute component. Data returned by this ActivatedRoute is shown.
+
+  <div style="margin-left: 20pt">
+    <p>activeRoute.url = {{ activeRoute.url | async }}</p>
+    <p>activeRoute.data = {{ activeRoute.data | async }}</p>
+    <p>activeRoute.paramMap = {{ activeRoute.paramMap | async }}</p>
+    <p>activeRoute.queryParamMap = {{ activeRoute.queryParamMap | async }}</p>
+    <p>activeRoute.fragment = {{ activeRoute.fragment | async }}</p>
+    <p>activeRoute.outlet = {{ activeRoute.outlet }}</p>
+    <p>activeRoute.routeConfig = {{ activeRoute.routeConfig | async }}</p>
+    <p>activeRoute.parent = {{ activeRoute.parent.toString() }}</p>
+    <p>activeRoute.firstChild = {{ activeRoute.firstChild.toString() }}</p>
+    <p>activeRoute.children = {{ activeRoute.children.toString() }}</p>
+  </div>
+</div>

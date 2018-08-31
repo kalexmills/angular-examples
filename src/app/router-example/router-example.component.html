@@ -1,4 +1,35 @@
 <div>
-  Router Example page shown!
+  <h3>Router Example</h3>
+
+  <p>
+    Using href on anchor tags will force a page refresh. Moreover, the URL must be absolute.
+  </p>
+  <p>
+    <a href="router-example/child1">Child 1</a>
+  </p>
+  <p>
+    <a href="router-example/child2">Child 2</a>
+  </p>
+
+
+  <p>
+    Using routerLink instead does not force a refresh, and supports relative paths. More appropriate for an SPA.
+  </p>
+  <p>
+    <a routerLink="child1">Child 1</a>
+  </p>
+  <p>
+    <a routerLink="child2">Child 2</a>
+  </p>
+
+  <p>
+    Injecting ActivatedRoute provides a component with some information about how the user caused it to appear.
+  </p>
+  <p>
+    <a routerLink="activated-route">Activated Route Example</a>
+  </p>
+
+
+
   <router-outlet></router-outlet>
 </div>
