@@ -3,6 +3,6 @@
 
 <div style="margin-top: 50px;">
   <ng-container *ngFor="let nav of links">
-    <a [href]="nav.link">{{ nav.title }}</a><br/>
+    <a [routerLink]="nav.link">{{ nav.title }}</a><br/>
   </ng-container>
 </div>

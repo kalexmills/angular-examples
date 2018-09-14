@@ -16,14 +16,16 @@ import {FormsModule} from '@angular/forms';
 import { ListenerComponent } from './behavior-subject/listener/listener.component';
 import { SenderComponent } from './behavior-subject/sender/sender.component';
 import {EventBusService} from './behavior-subject/event-bus.service';
+import {FeatureModuleModule} from './feature-module/feature-module.module';
 
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FeatureModuleModule,
+    AppRoutingModule,    // AppRoutingModule must come AFTER all feature modules. The order of imports can affect the order of routing.
   ],
   declarations: [
     AppComponent,

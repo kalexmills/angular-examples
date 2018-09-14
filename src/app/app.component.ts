@@ -15,6 +15,10 @@ export class AppComponent {
     {
       link: 'behavior-subject',
       title: 'BehaviorSubject'
+    },
+    {
+      link: 'feature-module',
+      title: 'Feature Module'
     }
   ];
 
