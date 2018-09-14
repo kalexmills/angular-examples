@@ -17,6 +17,7 @@ import { ListenerComponent } from './behavior-subject/listener/listener.componen
 import { SenderComponent } from './behavior-subject/sender/sender.component';
 import {EventBusService} from './behavior-subject/event-bus.service';
 import {FeatureModuleModule} from './feature-module/feature-module.module';
+import {DomReuseModule} from './dom-reuse/dom-reuse.module';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import {FeatureModuleModule} from './feature-module/feature-module.module';
     HttpClientModule,
     FormsModule,
     FeatureModuleModule,
+    DomReuseModule,
     AppRoutingModule,    // AppRoutingModule must come AFTER all feature modules. The order of imports can affect the order of routing.
   ],
   declarations: [

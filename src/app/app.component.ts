@@ -19,6 +19,10 @@ export class AppComponent {
     {
       link: 'feature-module',
       title: 'Feature Module'
+    },
+    {
+      link: 'dom-reuse',
+      title: 'DOM Reuse'
     }
   ];
 

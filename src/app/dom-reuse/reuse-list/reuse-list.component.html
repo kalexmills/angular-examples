@@ -1,0 +1,6 @@
+<div style="border: 1px solid black; width: 50%; min-height: 200px; padding: 10px">
+  <ng-container *ngFor="let item of items">
+    <span><a [routerLink]="item.link">{{ item.contents }}</a>&nbsp;|&nbsp;</span>
+  </ng-container>
+  <router-outlet></router-outlet>
+</div>
