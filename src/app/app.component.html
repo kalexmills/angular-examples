@@ -1,8 +1,10 @@
+<div style="margin-bot: 16px;">
+  |&nbsp;
+  <ng-container *ngFor="let nav of links">
+    <span><a [routerLink]="nav.link">{{ nav.title }}</a>&nbsp;|&nbsp;</span>
+  </ng-container>
+</div>
+
 <span class="glyphicon glyphicon-refresh glyphicon-spin spinner" *ngIf="loading"></span>
 <router-outlet></router-outlet>
 
-<div style="margin-top: 50px;">
-  <ng-container *ngFor="let nav of links">
-    <a [routerLink]="nav.link">{{ nav.title }}</a><br/>
-  </ng-container>
-</div>
