@@ -1,5 +1,7 @@
 # AngularExamples
 
+> A good stack of examples, as large as possible, is indispensable for a thorough understanding of any concept, and when I want to learn something new, I make it my first job to build one. -- [Paul Halmos](https://www.wikipedia.org/wiki/Paul_Halmos)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
 ## Development server
