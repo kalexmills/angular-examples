@@ -7,26 +7,36 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationError, Navigat
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  links = [
+  linkGroups = [
     {
-      link: 'router-example',
-      title: 'Router Example'
+      groupName: 'Routing',
+      links: [
+        {
+          link: 'router-example',
+          title: 'Router Example'
+        },
+        {
+          link: 'feature-module',
+          title: 'Feature Module'
+        },
+        {
+          link: 'dom-reuse',
+          title: 'DOM Reuse'
+        },
+        {
+          link: 'router-guards',
+          title: 'Router Guards'
+        }
+      ]
     },
     {
-      link: 'behavior-subject',
-      title: 'BehaviorSubject'
-    },
-    {
-      link: 'feature-module',
-      title: 'Feature Module'
-    },
-    {
-      link: 'dom-reuse',
-      title: 'DOM Reuse'
-    },
-    {
-      link: 'router-guards',
-      title: 'Router Guards'
+      groupName: 'RxJS',
+      links: [
+        {
+          link: 'behavior-subject',
+          title: 'BehaviorSubject',
+        },
+      ]
     }
   ];
 

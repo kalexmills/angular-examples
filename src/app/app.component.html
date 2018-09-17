@@ -1,7 +1,12 @@
 <div style="margin-bot: 16px;">
-  |&nbsp;
-  <ng-container *ngFor="let nav of links">
-    <span><a [routerLink]="nav.link">{{ nav.title }}</a>&nbsp;|&nbsp;</span>
+
+  <ng-container *ngFor="let group of linkGroups">
+    <span style="display: inline-block; min-width: 75px;"><b>{{group.groupName}}</b></span>
+    &nbsp;|&nbsp;
+    <ng-container *ngFor="let nav of group.links">
+      <span><a [routerLink]="nav.link">{{ nav.title }}</a>&nbsp;|&nbsp;</span>
+    </ng-container>
+    <br/>
   </ng-container>
 </div>
 
