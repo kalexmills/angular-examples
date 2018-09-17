@@ -23,6 +23,10 @@ export class AppComponent {
     {
       link: 'dom-reuse',
       title: 'DOM Reuse'
+    },
+    {
+      link: 'router-guards',
+      title: 'Router Guards'
     }
   ];
 

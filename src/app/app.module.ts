@@ -18,7 +18,7 @@ import { SenderComponent } from './behavior-subject/sender/sender.component';
 import {EventBusService} from './behavior-subject/event-bus.service';
 import {FeatureModuleModule} from './feature-module/feature-module.module';
 import {DomReuseModule} from './dom-reuse/dom-reuse.module';
-
+import {RouterGuardsModule} from './router-guards/router-guards.module';
 
 @NgModule({
   imports: [
@@ -27,6 +27,7 @@ import {DomReuseModule} from './dom-reuse/dom-reuse.module';
     FormsModule,
     FeatureModuleModule,
     DomReuseModule,
+    RouterGuardsModule,
     AppRoutingModule,    // AppRoutingModule must come AFTER all feature modules. The order of imports can affect the order of routing.
   ],
   declarations: [
@@ -38,7 +39,7 @@ import {DomReuseModule} from './dom-reuse/dom-reuse.module';
     ActivatedRouteComponent,
     BehaviorSubjectComponent,
     ListenerComponent,
-    SenderComponent
+    SenderComponent,
   ],
   providers: [
     EventBusService
