@@ -34,8 +34,12 @@ export class AppComponent {
       links: [
         {
           link: 'behavior-subject',
-          title: 'BehaviorSubject',
+          title: 'BehaviorSubject Usage',
         },
+        {
+          link: 'typeahead',
+          title: 'Type-ahead Suggestions'
+        }
       ]
     }
   ];

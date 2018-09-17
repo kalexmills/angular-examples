@@ -6,6 +6,7 @@ import {Child1Component} from './router-example/children/child-1.component';
 import {Child2Component} from './router-example/children/child-2.component';
 import {ActivatedRouteComponent} from './router-example/children/activated-route.component';
 import {BehaviorSubjectComponent} from './behavior-subject/behavior-subject.component';
+import {TypeAheadComponent} from './type-ahead/type-ahead.component';
 
 
 const appRoutes: Routes = [
@@ -22,6 +23,10 @@ const appRoutes: Routes = [
     path: 'behavior-subject',
     component: BehaviorSubjectComponent
   },
+  {
+    path: 'typeahead',
+    component: TypeAheadComponent,
+  }
   { path: '**', component: NotFoundComponent }
 ];
 

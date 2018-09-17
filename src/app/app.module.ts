@@ -19,6 +19,7 @@ import {EventBusService} from './behavior-subject/event-bus.service';
 import {FeatureModuleModule} from './feature-module/feature-module.module';
 import {DomReuseModule} from './dom-reuse/dom-reuse.module';
 import {RouterGuardsModule} from './router-guards/router-guards.module';
+import { TypeAheadComponent } from './type-ahead/type-ahead.component';
 
 @NgModule({
   imports: [
@@ -40,6 +41,7 @@ import {RouterGuardsModule} from './router-guards/router-guards.module';
     BehaviorSubjectComponent,
     ListenerComponent,
     SenderComponent,
+    TypeAheadComponent,
   ],
   providers: [
     EventBusService
